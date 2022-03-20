@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="uft-8">
+    <title>CSS 3 Selectors</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            text-align: left;
+            font-family: monospace;
+        }
+        .green {
+           background-color:green;
+        }
+        .lightGreen {
+           background-color:lightgreen;
+        }
+        .cyan {
+           background-color:rgb(47, 255, 193);
+        }
+        td:nth-child(5) {
+            border-left: 5px solid red;
+            border-right: 5px solid red;
+        }
+        th:nth-child(5) {
+            border-left: 5px solid red;
+            border-right: 5px solid red;
+            border-top: 5px solid red;
+        }
+        tr:last-child>td:nth-child(5) {
+            border-bottom: 5px solid red;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>CSS 3 Selectors</h1>
+    <table>
+        <thead>
+            <tr class="green">
+                <th>Date</th>
+                <th>Description</th>
+                <th>Transfer</th>
+                <th>Deposit</th>
+                <th>Withdraw</th>
+                <th>Balance</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="lightGreen">
+                <td>02/08/2022</td>
+                <td>Restaurant</td>
+                <td>Expenses:Foods</td>
+                <td></td>
+                <td>38.14</td>
+                <td>440.67</td>
+            </tr>
+            <tr class="cyan">
+                <td>02/02/2022</td>
+                <td>Market</td>
+                <td>Expenses:Groceries</td>
+                <td></td>
+                <td>123.14</td>
+                <td></td>
+            </tr>
+            <tr class="lightGreen">
+                <td>02/11/2022</td>
+                <td>Gas</td>
+                <td>Expenses:Car</td>
+                <td></td>
+                <td>40.00</td>
+                <td></td>
+            </tr>
+            <tr class="cyan">
+                <td>02/12/2022</td>
+                <td>Payroll</td>
+                <td>Income:Salary</td>
+                <td>2,000.00</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr class="lightGreen">
+                <td>02/12/2022</td>
+                <td>Restaurant</td>
+                <td>Expenses:House Supplies</td>
+                <td></td>
+                <td>41.14</td>
+                <td></td>
+            </tr>
+            <tr class="cyan">
+                <td>02/14/2022</td>
+                <td>Dentist</td>
+                <td>Expenses:Medical</td>
+                <td></td>
+                <td>166.20</td>
+                <td></td>
+            </tr>
+            <tr class="lightGreen">
+                <td>02/15/2022</td>
+                <td>Electricity</td>
+                <td>Expenses:Utilities</td>
+                <td></td>
+                <td>27.88</td>
+                <td></td>
+            </tr>
+            <tr class="cyan">
+                <td>02/16/2022</td>
+                <td>Filene's Basement</td>
+                <td>Expenses:Grooming</td>
+                <td></td>
+                <td>31.93</td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
